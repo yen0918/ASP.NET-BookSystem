@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+    font-family: 'Noto Sans TC' !important;
+    font-weight: 300 !important;
+    padding:0;
+    margin:0;
+}
+
+main{
+    padding-top:30px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background: #3b5998;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.navbar-title{
+    color:white;
+    margin: 0;
+    font-size:22px !important;
+    font-family: 'Noto Sans TC' !important;
+    line-height: 60px !important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.fieldlist {
+    margin: 0 0 3px;
+    padding: 0;
+}
+
+.fieldlist li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+table .k-button {
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%) !important;
+}
+
+.k-confirm .k-window-titlebar::before {
+    content: '刪除提示';
+}
+
+.k-confirm .k-window-titlebar .k-dialog-title {
+        visibility:collapse; /*將預設的標題刪除*/
+}
+
+.k-alert .k-window-titlebar::before{
+    content: '系統提示';
+}
+
+.k-alert .k-window-titlebar .k-dialog-title {
+    visibility:collapse; /*將預設的標題刪除*/
+}

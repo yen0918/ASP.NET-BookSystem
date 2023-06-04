@@ -1,0 +1,10 @@
+﻿body {
+}
+
+/*CSS在文字前加上紅色星號*/
+
+.required::before {
+    content: "*";
+    color: red;
+}
+

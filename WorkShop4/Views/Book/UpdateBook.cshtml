@@ -1,0 +1,94 @@
+﻿<head>
+    <link rel="stylesheet" href="~/Content/UpdateBook.css">
+    <script src="~/Scripts/UpdateBook.js"></script>
+</head>
+
+
+
+
+<div id="updateForm">
+    <div class="form-horizontal">
+        <hr />
+        <br />
+        <br />
+        <h2 id="pageTitle"></h2>
+        <div class="form-group">
+            <label class="control-label col-md-2 required">書名</label>
+            <div class="col-md-10">
+                <input name="bname" value="" class="form-control" id="bookName" required validationMessage="這是必填欄位" />
+                <span class="k-invalid-msg" data-for="bname"></span>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <label class="control-label col-md-2 required">作者</label>
+            <div class="col-md-10">
+                <input name="bauthor" value="" class="form-control" id="bookAuthor" required validationMessage="這是必填欄位" />
+                <span class="k-invalid-msg" data-for="bauthor"></span>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <label class="control-label col-md-2 required">出版商</label>
+            <div class="col-md-10">
+                <input name="bpublisher" value="" class="form-control" id="bookPublisher" required validationMessage="這是必填欄位" />
+                <span class="k-invalid-msg" data-for="bpublisher"></span>
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <label class="control-label col-md-2 required">內容簡介</label>
+            <div class="col-md-10">
+                <textarea name="bnote" value="" class="form-control" id="bookNote" required validationMessage="這是必填欄位"></textarea>
+                <span class="k-invalid-msg" data-for="bnote"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2 required">購書日期</label>
+            <div class="col-md-10">
+                <input name="bboughtdate" value="" class="form-control" id="bookBoughtDate" required validationMessage="這是必填欄位" />
+                <span class="k-invalid-msg" data-for="bboughtdate"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2 required">圖書類別</label>
+            <div class="col-md-10">
+                <input name="bcategory" value="" class="form-control" id="bookCategory" required validationMessage="這是必填欄位" />
+                <span class="k-invalid-msg" data-for="bcategory"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2 required">借閱狀態</label>
+            <div class="col-md-10">
+                <input name="bstatus" value="" class="form-control" id="bookStatus" required validationMessage="這是必填欄位" />
+                <span class="k-invalid-msg" data-for="bstatus"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">借閱人</label>
+            <div class="col-md-10">
+                <input name="bkeeper" value="" class="form-control" id="bookKeeper" />
+                <span class="k-invalid-msg" data-for="bkeeper"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <a class="btnDelete">
+                    <input type="button" value="刪除" class="btn btn-default" id="btnDelete" />
+                </a>
+                <input type="submit" value="存檔" class="btn btn-default" id="btnSave" />
+            </div>
+        </div>
+    </div>
+</div>
+    <div>
+
+        <a href="Index">
+            <input type="button" value="回上一頁" class="btn btn-default" id="btnBack" />
+        </a>
+    </div>

@@ -1,0 +1,64 @@
+﻿
+<head>
+    <link rel="stylesheet" href="~/Content/Index.css">
+    <script src="~/Scripts/Index.js"></script>
+</head>
+
+<div class="form-horizontal">
+
+    <hr />
+    <br />
+    <br />
+
+    <h2>首頁</h2>
+    <div class="form-group">
+        <label class="control-label col-md-2"> 書名</label>
+        <div class="col-md-10">
+            <input class="form-control" name="name" value="" id="bookName" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">圖書類別</label>
+        <div class="col-md-10">
+            <input class="form-control" name="name" value="" id="bookCategory" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">借閱狀態</label>
+        <div class="col-md-10">
+            <input class="form-control" name="name" value="" id="bookStatus" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">借閱人</label>
+        <div class="col-md-10">
+            <input class="form-control" name="name" value="" id="lendUser" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="查詢" class="btn btn-default" id="getBook" />
+            <a href="Index">
+                <input type="button" value="清除" class="btn btn-default" />
+            </a>
+            <a href="InsertBook">
+                <input type="button" value="新增" class="btn btn-default" />
+            </a>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div id="book_grid"></div>
+
+</div>
+    <div>
+        <a href="Index">
+            <input type="button" value="首頁" class="btn btn-default" id="btnBack" />
+        </a>
+    </div>

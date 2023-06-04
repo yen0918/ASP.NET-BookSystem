@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+	<!--Controller id:類別名稱, type:ControllerNameSpace+類別名稱, 組件名稱-->
+	<object id="BookController"  type="WorkShop4.Controllers.BookController,WorkShop4" singleton="false">
+		<!--name: Controller內定義的IBookService與IDropDownListData名稱-->
+		<!--ref: ref會分別對到下面兩個Object的id-->
+		<property name="bookService" ref="BookService" />
+		<property name="dropDownListData" ref="DropDownListData" />
+	</object>
+	
+	<!--id: 類別名稱, type: NameSpace+類別名稱, 組件名稱-->
+	<object id="BookService" type="WorkShop4.Service.BookService,WorkShop4.Service">
+		<!--name: BookService內定義的IBookServiceDao名稱-->
+		<!--ref: ref會對到下面Object的id-->
+		<property name="bookServiceDao" ref="BookServiceDao" />
+	</object>
+
+	<!--id: 類別名稱, type: NameSpace+類別名稱, 組件名稱-->
+	<object id="DropDownListData" type="WorkShop4.Service.DropDownListData,WorkShop4.Service">
+		<!--name: BookService內定義的IDropDownListDataDao名稱-->
+		<!--ref: ref會對到下面Object的id-->
+		<property name="dropDownListDataDao" ref="DropDownListDataDao" />
+	</object>
+
+	<!--id: 類別名稱, type: NameSpace+類別名稱, 組件名稱-->
+	<object id="BookServiceDao" type="WorkShop4.Dao.BookServiceDao,WorkShop4.Dao"/>
+	<object id="DropDownListDataDao" type="WorkShop4.Dao.DropDownListTestDataDao,WorkShop4.Dao"/>
+
+</objects>
